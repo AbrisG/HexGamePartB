@@ -3,6 +3,7 @@
 
 from referee.game import \
     PlayerColor, Action, SpawnAction, SpreadAction, HexPos, HexDir
+from agent.minimax import Position
 
 
 # This is the entry point for your game playing agent. Currently the agent
@@ -41,6 +42,8 @@ class Agent:
         match action:
             case SpawnAction(cell):
                 print(f"Testing: {color} SPAWN at {cell}")
+                position = Position(color, {HexPos(3, 3): (color, 1)})
+                print(len(position.get_children()))
                 pass
             case SpreadAction(cell, direction):
                 print(f"Testing: {color} SPREAD from {cell}, {direction}")
