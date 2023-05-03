@@ -5,13 +5,6 @@ import random
 from referee.game import \
     PlayerColor, Action, SpawnAction, SpreadAction, HexPos, HexDir, Board
 
-
-# This is the entry point for your game playing agent. Currently the agent
-# simply spawns a token at the centre of the board if playing as RED, and
-# spreads a token at the centre of the board if playing as BLUE. This is
-# intended to serve as an example of how to use the referee API -- obviously
-# this is not a valid strategy for actually playing the game!
-
 class RandomAgent:
     def __init__(self, color: PlayerColor, **referee: dict):
         """

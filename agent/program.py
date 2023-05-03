@@ -7,13 +7,6 @@ from agent.minimax import minimax, generate_valid_spawn_actions
 from referee.game import \
     PlayerColor, Action, SpawnAction, SpreadAction, HexDir
 
-
-# This is the entry point for your game playing agent. Currently the agent
-# simply spawns a token at the centre of the board if playing as RED, and
-# spreads a token at the centre of the board if playing as BLUE. This is
-# intended to serve as an example of how to use the referee API -- obviously
-# this is not a valid strategy for actually playing the game!
-
 class Agent:
     def __init__(self, color: PlayerColor, **referee: dict):
         """
@@ -26,7 +19,7 @@ class Agent:
 
     def action(self, **referee: dict) -> Action:
         """
-        Return the next action to take.
+        Return the next action to take. Runs minimax to find the best action.
         """
         if self.board._color_power(self._color) == 0:
             return random.choice(generate_valid_spawn_actions(self.board))
@@ -58,22 +51,3 @@ class Agent:
                 self.board.apply_action(action)
                 pass
 
-
-
-# Testing locally
-if __name__ == "__main__":
-    agent_red = Agent(PlayerColor.RED)
-    agent_blue = Agent(PlayerColor.BLUE)
-
-    print(agent_red.generate_valid_actions())
-    action_red = agent_red.action()
-
-    agent_red.turn(PlayerColor.RED, action_red)
-    agent_blue.turn(PlayerColor.RED, action_red)
-
-    action_blue_bad = SpawnAction(action_red.cell + HexDir.UpLeft)
-    agent_blue.turn(PlayerColor.BLUE, action_blue_bad)
-    agent_red.turn(PlayerColor.BLUE, action_blue_bad)
-
-    action_red_good = agent_red.action()
-    agent_red.turn(PlayerColor.RED, action_red_good)
