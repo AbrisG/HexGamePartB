@@ -4,3 +4,4 @@
 from .program import Agent
 from .random_agent import RandomAgent
 from .greedy_agent import GreedyAgent
+from .minimax_agent import MinimaxAgent

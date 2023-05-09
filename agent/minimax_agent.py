@@ -7,7 +7,7 @@ from agent.minimax import minimax, generate_valid_spawn_actions
 from referee.game import \
     PlayerColor, Action, SpawnAction, SpreadAction, HexDir
 
-class Agent:
+class MinimaxAgent:
     def __init__(self, color: PlayerColor, **referee: dict):
         """
         Initialise the agent.
@@ -16,6 +16,7 @@ class Agent:
         self.board = OurBoard()
         self.maximizingPlayer = color == PlayerColor.RED
         self.minimax_depth = 3
+        print(f"I am a {color} agent")
 
     def action(self, **referee: dict) -> Action:
         """
@@ -29,7 +30,8 @@ class Agent:
                 self.minimax_depth,
                 -100000000000,
                 100000000000,
-                self.maximizingPlayer
+                self.maximizingPlayer,
+                eval_func="new"
             )
             best_action_depth = self.minimax_depth - depth
             best_action = board.last_ith_action(best_action_depth)

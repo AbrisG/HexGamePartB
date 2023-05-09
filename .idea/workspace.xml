@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47c39daf-1084-41db-a7f9-c0f6a0854a90" name="Changes" comment="Merged with main">
+      <change afterPath="$PROJECT_DIR$/agent/minimax_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent/tanya_jere_minmax_agent/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent/tanya_jere_minmax_agent/gamestate_other.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent/tanya_jere_minmax_agent/greedy_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent/tanya_jere_minmax_agent/minmax_agent_other.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent/tanya_jere_minmax_agent/minmax_other.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent/tanya_jere_minmax_agent/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/greedy_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/greedy_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agent/minimax.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/minimax.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agent/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/program.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/random_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agent/random_agent.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/abrisgilvesy/Desktop/part_b&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/abrisgilvesy/Desktop/part_b/agent"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/agent" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/agent" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.minimax (1)">
+  <component name="RunManager" selected="Python.minimax">
     <configuration name="minimax" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="part_b" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,11 +157,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.minimax (1)" />
+        <item itemvalue="Python.minimax" />
         <item itemvalue="Python.program" />
         <item itemvalue="Python tests.Python tests in /Users/abrisgilvesy/Desktop/part_b/agent/tests/position_test.py" />
         <item itemvalue="Python.position" />
-        <item itemvalue="Python.minimax" />
       </list>
     </recent_temporary>
   </component>
@@ -177,5 +186,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merged with main" />
     <option name="LAST_COMMIT_MESSAGE" value="Merged with main" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/agent/minimax.py</url>
+          <line>133</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
