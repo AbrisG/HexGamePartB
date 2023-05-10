@@ -130,6 +130,5 @@ if __name__ == "__main__":
     print(board.render(True))
 
     board._turn_color = PlayerColor.BLUE
-    value, board_new, depth = minimax(board, 3, -100000000000, 100000000000, False)
-    randocalc = 1 + 1
-    print(randocalc)
+    value, board_new, depth = minimax(board, 4, -100000000000, 100000000000, False)
+    print(board_new.render(True))

@@ -21,7 +21,7 @@ class Agent:
         """
         Return the next action to take. Runs minimax to find the best action.
         """
-        if self.board._color_power(self._color) == 0:
+        if self.board._total_power == 0:
             return random.choice(generate_valid_spawn_actions(self.board))
         else:
             value, board, depth = minimax(
@@ -33,7 +33,6 @@ class Agent:
             )
             best_action_depth = self.minimax_depth - depth
             best_action = board.last_ith_action(best_action_depth)
-            print("Taking action with value", value)
             return best_action
 
 
